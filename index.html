@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Shadow DOM Bookmarklet</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 2rem;
+            }
+            a.bookmarklet {
+                display: block;
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                color: #333;
+                width: 15rem;
+                background: blue;
+                color: white;
+            }
+            textarea {
+                padding: 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Shadow DOM</h1>
+        <p>Drag this link to the Bookmarks Bar of your browser.</p>
+        <p>
+            <a
+                class="bookmarklet"
+                href="javascript:(function(){let e=document.querySelectorAll('*'),t=0;e.forEach(e=>{e.shadowRoot&&t++}),alert('This page contains '+t+' Shadow DOM elements.')})()"
+                >Check for Shadow DOM element</a
+            ></p>
+            <p>
+                If you can't drag the link, <a href="" id="copyLink">copy the code below (or click this link)</a> and bookmark it in the traditional way.
+            </p>
+            <textarea
+                id="bookmarkletCode"
+                cols="80"
+                rows="2"
+            >
+javascript:(function(){let e=document.querySelectorAll('*'),t=0;e.forEach(e=>{e.shadowRoot&&t++}),alert('This page contains '+t+' Shadow DOM elements.')})()</textarea
+            >
+        </p>
+        <p>You'll see an alert like this:</p>
+        <p>
+            <img src="example.png" srcset="example.png 2x" alt="Alert says: 'www.vdab.be says This pagecontains 110 Shadow DOM elements.'">
+        </p>
+        <p>See this <a href="https://elevenways.slack.com/archives/C03R2AYNYRG/p1701464754915289">Slack discussion about Shadow DOM</a>.</p>
+        <script src="script.js"></script>
+    </body>
+</html>
