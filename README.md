@@ -4,11 +4,7 @@ This project provides a simple way to check the number of Shadow DOM elements on
 
 ## Setup
 
-Follow the steps below to add the bookmarklet to your browser:
-
-1. Drag the 'Check for Shadow DOM element' link to your bookmarks bar.
-2. If you cannot drag the link, click the 'copy the code below' link to copy the bookmarklet JavaScript code.
-3. Create a new bookmark and paste the copied JavaScript code into the URL field of the bookmark.
+Follow the [instructions on this page](https://11ways.github.io/check-shadowdom/). 
 
 ## Usage
 
