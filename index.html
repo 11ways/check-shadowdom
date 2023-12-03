@@ -35,10 +35,18 @@
                 class="bookmarklet"
                 href="javascript:(function(){let e=document.querySelectorAll('*'),t=0;e.forEach(e=>{e.shadowRoot&&t++}),alert('This page contains '+t+' Shadow DOM elements.')})()"
                 >Check for Shadow DOM element</a
-            ></p>
-            <p>
-                If you can't drag the link, <a href="" id="copyLink">copy the code below (or click this link)</a> and bookmark it in the traditional way.
-            </p>
+            >
+        </p>
+        <p>
+            If you can't drag the link,
+            <a
+                href=""
+                id="copyLink"
+                >copy the code below (or click this link)</a
+            >
+            and bookmark it in the traditional way.
+        </p>
+        <p>
             <textarea
                 id="bookmarkletCode"
                 cols="80"
@@ -49,9 +57,19 @@ javascript:(function(){let e=document.querySelectorAll('*'),t=0;e.forEach(e=>{e.
         </p>
         <p>You'll see an alert like this:</p>
         <p>
-            <img src="example.png" srcset="example.png 2x" alt="Alert says: 'www.vdab.be says This pagecontains 110 Shadow DOM elements.'">
+            <img
+                src="example.png"
+                srcset="example.png 2x"
+                alt="Alert says: 'www.vdab.be says This pagecontains 110 Shadow DOM elements.'"
+            />
         </p>
-        <p>See this <a href="https://elevenways.slack.com/archives/C03R2AYNYRG/p1701464754915289">Slack discussion about Shadow DOM</a>.</p>
+        <p>
+            See this
+            <a
+                href="https://elevenways.slack.com/archives/C03R2AYNYRG/p1701464754915289"
+                >Slack discussion about Shadow DOM</a
+            >.
+        </p>
         <script src="script.js"></script>
     </body>
 </html>
